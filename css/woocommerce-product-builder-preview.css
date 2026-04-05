@@ -110,12 +110,32 @@
   border-radius: 4px;
 }
 
+.vi-wpb-wrapper .woopb-button-preview-page {
+  background: #020100;
+  color: #ffffff !important;
+  border: 1px solid #f79923;
+}
+
+.vi-wpb-wrapper .woopb-button-preview-page:hover {
+  background: #f79923;
+  color: #020100 !important;
+}
+
+.vi-wpb-wrapper .woopb-button-preview-page .woopb-label {
+  color: inherit !important;
+}
+
 .woopb-back-to-selector .woopb-back-to-selector-icon {
   mask: url("../images/previous-icon.svg") no-repeat center/contain;
   -webkit-mask: url("../images/previous-icon.svg") no-repeat center/contain;
   width: 20px;
   height: 12px;
   display: inline-block;
+}
+
+.vi-wpb-wrapper .woopb-back-to-selector .woopb-back-to-selector-icon {
+  background-color: currentColor;
+  transform: scaleX(-1);
 }
 
 .woopb-add-to-cart-btn {
@@ -185,6 +205,30 @@
   height: 41px !important;
   border-radius: 6px !important;
   border: solid 1px #d6d6d6 !important;
+}
+
+.vi-wpb-wrapper .woopb-short-share-link-inner,
+.vi-wpb-wrapper .woopb-buttons-group .woopb-short-share-link {
+  background: #111111;
+  border-color: #f79923;
+}
+
+.vi-wpb-wrapper .woopb-share-link {
+  background: #111111 !important;
+  color: #ffffff !important;
+  border: 1px solid #f79923 !important;
+}
+
+.vi-wpb-wrapper .woopb-share-link::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.vi-wpb-wrapper .woopb-copy-short-link {
+  color: #ffffff;
+}
+
+.vi-wpb-wrapper .woopb-copy-short-link:hover {
+  color: #f79923;
 }
 
 .woopb-close-modal {
