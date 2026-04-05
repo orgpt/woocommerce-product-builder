@@ -1717,6 +1717,7 @@
 
 .woocommerce-price-suffix {
   font-size: 10px;
+  display: none !important;
 }
 
 .woocommerce-Price-amount.amount,
