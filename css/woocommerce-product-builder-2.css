@@ -1721,7 +1721,10 @@
 
 .woocommerce-product-builder-wrapper .woopb-product .woopb-product-price {
   white-space: normal;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
   min-width: 130px;
 }
 
@@ -1733,6 +1736,14 @@
   flex-wrap: wrap;
 }
 
+.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price > .amount,
+.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price > .woocommerce-Price-amount.amount,
+.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .price > .amount {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
 .woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .woocommerce-price-suffix {
   display: block;
   width: 100%;
@@ -1741,6 +1752,16 @@
   line-height: 1.25;
   white-space: normal;
   text-align: right;
+  clear: both;
+}
+
+.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price br {
+  display: block;
+  content: "";
+}
+
+.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .woocommerce-Price-currencySymbol {
+  margin-inline-start: 2px;
 }
 
 .woocommerce-Price-amount.amount,
