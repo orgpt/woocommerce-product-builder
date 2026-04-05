@@ -7,7 +7,7 @@ global $product;
 		<?php
 		/*remove_all_actions( 'woocommerce_product_thumbnails' );
 		woocommerce_show_product_images();*/
-        echo get_the_post_thumbnail( $product->get_id(), 'full' );
+        echo get_the_post_thumbnail( $product->get_id(), 'woocommerce_thumbnail' );
 		?>
     </div>
 </div>

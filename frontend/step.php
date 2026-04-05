@@ -1333,8 +1333,10 @@ class VI_WPRODUCTBUILDER_FrontEnd_Step {
 		// Enqueue variation scripts.
 		wp_enqueue_script('wc-add-to-cart-variation');
 
-		// Get Available variations?
-		$get_variations = count($product->get_children()) <= apply_filters('woocommerce_ajax_variation_threshold', 30, $product);
+		// Avoid preloading full variation payloads for product cards in the builder.
+		// Let WooCommerce fetch variation data on demand after attribute selection instead.
+		$variation_threshold = (int) apply_filters( 'woopb_ajax_variation_threshold', 0, $product, $post_id );
+		$get_variations      = count( $product->get_children() ) <= $variation_threshold;
 
 		// Load the template.
 		wpb_get_template('single/add-to-cart-variable.php', array(

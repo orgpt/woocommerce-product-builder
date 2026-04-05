@@ -6,6 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class VI_WPRODUCTBUILDER_Data {
 	protected $data;
 	protected $params;
+	protected $product_filters_cache = array();
 	protected static $instance = null;
 
 	public function __construct() {
@@ -627,6 +628,34 @@ class VI_WPRODUCTBUILDER_Data {
 			$paged = 1;
 		}
 
+		$cache_request = array(
+			'min_price'     => sanitize_text_field( $_REQUEST['min_price'] ?? '' ),
+			'max_price'     => sanitize_text_field( $_REQUEST['max_price'] ?? '' ),
+			'rating_filter' => sanitize_text_field( $_REQUEST['rating_filter'] ?? '' ),
+			'sort_by'       => sanitize_text_field( wp_unslash( $_POST['sort_by'] ?? get_query_var( 'sort_by' ) ) ),
+			'name_filter'   => sanitize_text_field( get_query_var( 'name_filter' ) ),
+		);
+
+		foreach ( $_REQUEST as $request_key => $request_value ) {
+			if ( 0 === strpos( $request_key, 'filter_' ) || 0 === strpos( $request_key, 'query_type_' ) ) {
+				$cache_request[ $request_key ] = is_array( $request_value )
+					? array_map( 'sanitize_text_field', wp_unslash( $request_value ) )
+					: sanitize_text_field( wp_unslash( $request_value ) );
+			}
+		}
+
+		$cache_key = md5( wp_json_encode( array(
+			'post_id'     => (int) $post_id,
+			'step_id'     => (int) $step_id,
+			'paged'       => (int) $paged,
+			'pagination'  => (bool) $pagination,
+			'request'     => $cache_request,
+		) ) );
+
+		if ( array_key_exists( $cache_key, $this->product_filters_cache ) ) {
+			return $this->product_filters_cache[ $cache_key ];
+		}
+
 		$post_per_page = $this->get_data( $post_id, 'product_per_page', 10 );
 		$items         = $this->get_data( $post_id, 'list_content', array() ); //list steps
 
@@ -684,17 +713,18 @@ class VI_WPRODUCTBUILDER_Data {
 					}
 
 				}
-				if ( is_array( $list_attrs ) && ! empty( $list_attrs ) ) {
-					$list_attrs = $this->convert_single_array( $list_attrs );
-					$list_attrs = array_map( 'trim', $list_attrs );
-					$list_attrs = apply_filters( 'woopb_list_attrs_depend', $list_attrs, $step_id );
-					if ( empty( $list_attrs ) ) {
-						return false;
-					}
+					if ( is_array( $list_attrs ) && ! empty( $list_attrs ) ) {
+						$list_attrs = $this->convert_single_array( $list_attrs );
+						$list_attrs = array_map( 'trim', $list_attrs );
+						$list_attrs = apply_filters( 'woopb_list_attrs_depend', $list_attrs, $step_id );
+						if ( empty( $list_attrs ) ) {
+							$this->product_filters_cache[ $cache_key ] = false;
+							return false;
+						}
 
-					$where[] = "tt1.term_id IN (" . implode( ',', $list_attrs ) . ")";
+						$where[] = "tt1.term_id IN (" . implode( ',', $list_attrs ) . ")";
+					}
 				}
-			}
 			$where_products      = $where;
 			$product_ids_of_term = $result_product_ids = array();
 
@@ -743,6 +773,7 @@ class VI_WPRODUCTBUILDER_Data {
 
 			/*Show products on step*/
 			if ( count( $product_ids ) < 1 ) {
+				$this->product_filters_cache[ $cache_key ] = false;
 				return false;
 			} elseif ( $pagination ) {
 
@@ -901,11 +932,13 @@ class VI_WPRODUCTBUILDER_Data {
 
 			$the_product = new WP_Query( $product_args );
 			if ( $the_product->have_posts() ) {
+				$this->product_filters_cache[ $cache_key ] = $the_product;
 				return $the_product;
 			}
 			wp_reset_postdata();
 		}
 
+		$this->product_filters_cache[ $cache_key ] = false;
 		return false;
 	}
 
