@@ -1,0 +1,434 @@
+$gap: 15px;
+$border: 1px solid #eeeeee;
+$_main_color: #F6F8FB;
+$_black: #43454b;
+$_black_grey: #686868;
+$_box_shadow: rgb(0 0 0 / 35%) 0 0 3px 0, rgb(0 0 0 / 6%) 0 1px 2px 0;
+//============== PREVIEW ============//
+.woocommerce-product-builder-table-before {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.woocommerce-product-builder-table-review {
+  box-shadow: rgb(0 0 0 / 10%) 0 0 3px 0, rgb(0 0 0 / 6%) 0 1px 2px 0;
+  border-radius: 5px;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+
+  a {
+    color: inherit;
+  }
+
+  thead, tfoot {
+    th {
+      background-color: #f9fafb;
+      padding: 15px 30px;
+
+      &:not(:first-child) {
+        text-align: center;
+      }
+    }
+  }
+
+  tbody {
+    td {
+      border-top: $border;
+      border-bottom: $border;
+    }
+  }
+
+  td {
+    vertical-align: middle;
+    padding: 15px 30px;
+
+    &:not(:first-child) {
+      text-align: center;
+    }
+  }
+
+  .woopb-step-product-added-remove {
+    &:before {
+      font-family: "woocommerce-product-builder";
+      content: "\e9ad";
+    }
+
+    color: $_black;
+    opacity: 0.7;
+
+    &:hover {
+      color: red !important;
+    }
+  }
+
+  .woopb-preview-table-total-price {
+    font-weight: bold;
+    color: #000000;
+
+    .amount {
+      font-weight: bold;
+      color: #000000;
+    }
+  }
+}
+
+.woopb-share {
+  margin-top: 30px;
+}
+
+.woopb-preview-product-col {
+  display: flex;
+  align-items: center;
+
+  .vi-chosen_title {
+    padding: 10px;
+  }
+
+  img {
+    width: auto;
+    max-width: 120px;
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+    padding: 7px;
+  }
+
+  img, .vi-chosen_title {
+    vertical-align: middle;
+    margin: 0 !important;
+    display: inline-block;
+  }
+}
+
+.woopb-short-share-link-inner {
+  position: relative;
+
+}
+
+.woopb-short-share-link-inner {
+  background: white;
+  padding: 7px 7px 7px 10px;
+  border: 1px solid #ccc;
+  position: relative;
+  font-size: 14px;
+  margin-top: 7px;
+  line-height: 1.25;
+
+}
+
+.woopb-copy-short-link {
+  float: right;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.woopb-button-preview-page {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.woopb-back-to-selector {
+  .woopb-back-to-selector-icon {
+    mask: url('../images/previous-icon.svg') no-repeat center / contain;
+    -webkit-mask: url('../images/previous-icon.svg') no-repeat center / contain;
+    width: 20px;
+    height: 12px;
+    display: inline-block;
+  }
+}
+
+.woopb-add-to-cart-btn {
+  font-weight: normal;
+
+  .woopb-add-to-cart-icon {
+    &::before {
+      content: '';
+      mask: url('../images/add-to-cart-icon.svg') no-repeat center / contain;
+      -webkit-mask: url('../images/add-to-cart-icon.svg') no-repeat center / contain;
+      width: 20px;
+      height: 12px;
+      display: inline-block;
+    }
+  }
+}
+
+.woopb-buttons-group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+
+  .woopb-short-share-link {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: $border;
+  }
+
+  .group-1 {
+
+  }
+
+  .group-2 {
+    display: flex;
+    gap: 10px;
+
+    #vi_wpb_sendtofriend {
+      .vi_wpb_sendtofriend-icon {
+        mask: url('../images/mail-icon.svg') no-repeat center / contain;
+        -webkit-mask: url('../images/mail-icon.svg') no-repeat center / contain;
+        width: 19px;
+        height: 14px;
+        display: inline-block;
+      }
+    }
+
+    #woopb-print {
+      .woopb-builder-printer {
+        mask: url('../images/print-icon.svg') no-repeat center / contain;
+        -webkit-mask: url('../images/print-icon.svg') no-repeat center / contain;
+        width: 19px;
+        height: 14px;
+        display: inline-block;
+      }
+    }
+
+    #woopb-download-pdf {
+      .woopb-icon-file-pdf {
+        mask: url('../images/pdf-icon.svg') no-repeat center / contain;
+        -webkit-mask: url('../images/pdf-icon.svg') no-repeat center / contain;
+        width: 19px;
+        height: 14px;
+        display: inline-block;
+      }
+    }
+
+    #vi-wpb-get-short-share-link {
+      .woopb-get-short-link-icon {
+        mask: url('../images/share-icon.svg') no-repeat center / contain;
+        -webkit-mask: url('../images/share-icon.svg') no-repeat center / contain;
+        width: 19px;
+        height: 14px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.woopb-share-link {
+  width: 100% !important;
+  height: 41px !important;
+  border-radius: 6px !important;
+  border: solid 1px #d6d6d6 !important;
+}
+
+.woopb-close-modal {
+  display: none;
+}
+
+//============== EMAIL POPUP ============//
+
+/*Share popup*/
+#vi_wpb_popup_email {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  //font-size: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-weight: 300;
+
+  * {
+    line-height: 1.2;
+    box-sizing: border-box;
+  }
+
+  .woopb-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  .vi-wpb_overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .woopb-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .vi-wpb_popup {
+    width: 100%;
+    max-width: 760px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: left;
+    padding: 15px;
+    background: #fff;
+    box-shadow: $_box_shadow;
+    z-index: 2;
+    border-radius: 5px;
+  }
+
+  .vi-wpb_popup {
+    .vi-wpb_send_email {
+      margin: 0;
+    }
+  }
+
+  .woopb-rows {
+    display: flex;
+    gap: $gap;
+    flex-wrap: wrap;
+  }
+
+  .woopb-row {
+    width: calc(50% - 8px);
+  }
+
+  .woopb-full-width {
+    width: 100%;
+  }
+
+  .vi-wpb_popup {
+    .woopb-row {
+      label {
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      .woopb-field {
+        textarea {
+          overflow: auto;
+          padding-left: .875em;
+          vertical-align: top;
+        }
+
+        textarea, input[type="text"], input[type="email"] {
+          width: 100%;
+          border: $border;
+          box-shadow: none;
+          border-radius: 3px;
+          background-color: $_main_color;
+        }
+      }
+    }
+  }
+}
+
+.woopb-product-image {
+  .woocommerce-product-gallery {
+    float: unset !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .woocommerce-product-builder-table-review {
+
+    :is(thead,th) {
+      display: none
+    }
+
+    :is(tbody,tfoot,tr) {
+      display: block
+    }
+
+    tbody {
+      tr {
+        position: relative;
+        padding: 10px;
+        margin: 10px;
+        border-bottom: $border;
+
+        &:last-child {
+          margin-bottom: 0
+        }
+
+        td {
+          display: block;
+          margin-bottom: 10px;
+          padding: 0 0 10px;
+          border-bottom: none;
+          text-align: right;
+
+          &:before {
+            content: attr(data-title);
+            float: left;
+            padding-top: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 12px
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none
+          }
+
+          .woopb-preview-product-col {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+    td {
+      vertical-align: middle;
+      padding: 8px 15px;
+
+    }
+  }
+  .woopb-buttons-group {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    .group-2 {
+      display: flex;
+      flex-wrap: wrap;
+
+      .woopb-button-preview-page {
+        flex: 0 0 95%;
+        margin: 0 10px;
+
+      }
+    }
+  }
+
+}

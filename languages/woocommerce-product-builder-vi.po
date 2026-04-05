@@ -1,0 +1,949 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Woocommerce Product Builder Premium\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-22 07:26+0000\n"
+"PO-Revision-Date: 2022-10-28 09:35+0000\n"
+"Last-Translator: \n"
+"Language-Team: Tiếng Việt\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.3\n"
+"X-Domain: woocommerce-product-builder"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:922
+msgid " Date"
+msgstr "Ngày"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:921
+msgid " Shortcode"
+msgstr "Mã ngắn"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:956
+msgid "(Note: Use one shortcode per page only)"
+msgstr "(Lưu ý: Chỉ sử dụng một mã ngắn trên một trang)"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:363
+msgid "<admin@yoursite.com>"
+msgstr "<admin@yoursite.com>"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/archive-product-builder.php:55
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Trước"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:377
+msgid "[Subject email]"
+msgstr "[Chủ đề email]"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:725
+msgid "Add many products in a step"
+msgstr "Thêm nhiều sản phẩm trong một bước"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:113
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:139
+msgid "Add New"
+msgstr "Thêm mới"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:114
+msgid "Add New Product Builder"
+msgstr "Thêm Product Builder mới"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:140
+msgid "Add New Share link"
+msgstr "Thêm liên kết chia sẻ ngắn"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:538
+msgid "Add New Step"
+msgstr "Thêm bước mới"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:433
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:820
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:111
+msgid "Add to cart"
+msgstr "Thêm vào giỏ hàng"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:767
+msgid "Add to cart button always show "
+msgstr "Nút thêm vào giỏ hàng luôn hiện"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:238
+msgid "Advanced"
+msgstr "Nâng cao"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:118
+msgid "AJAX"
+msgstr "AJAX"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:338
+msgid "Allow customers to send an email to friends on the preview page."
+msgstr ""
+"Cho phép khách hàng gửi mail danh sách các sản phẩm 'Product Builders' đã "
+"chọn cho bạn của họ."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-layered-nav.php:80
+msgid "Attribute"
+msgstr "Thuộc tính"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:413
+msgid "Auto add product list when click link."
+msgstr "Tự động thêm danh sách sản phẩm khi nhấp vào liên kết."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:568
+msgid "Auto Update Key"
+msgstr "Mã tự động cập nhật"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-rating-filter.php:21
+msgid "Average rating"
+msgstr "Xếp hạng trung bình"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:117
+msgid "Back"
+msgstr "Quay lại"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:148
+msgid "Background color"
+msgstr "Màu nền"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/ajax.php:29
+msgid "Builder is not exist"
+msgstr "Builder không tồn tại"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:132
+msgid "Button"
+msgstr "Nút"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:181
+msgid "Button Icon"
+msgstr "Biểu tượng nút"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:886
+msgid "Cannot edit page"
+msgstr "Không thể sửa trang"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:323
+msgid "Categories"
+msgstr "Danh mục"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:710
+msgid "Child categories"
+msgstr "Danh mục con"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:116
+msgid "Classic"
+msgstr "Classic"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/ajax.php:124
+msgid "Clear"
+msgstr "Xóa"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:643
+msgid "Clear all"
+msgstr "Xóa hết"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:298
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/sidebar.php:66
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/sidebar.php:77
+msgid "Clear filter"
+msgstr "Xóa bộ lọc"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:307
+msgid "Clear filter after select"
+msgstr "Xóa bộ lọc sau khi chọn"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:283
+msgid "Clear session"
+msgstr "Xóa phiên"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:292
+msgid "Clear session after add to cart"
+msgstr "Xóa phiên sau khi thêm vào giỏ hàng"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/short-share-link.php:196
+msgid "Clicked"
+msgstr "Đã nhấp"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:226
+msgid "Control bar background color"
+msgstr "Màu nền thanh điều khiển"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:213
+msgid "Control bar text color"
+msgstr "Màu chữ trên thanh điều khiển"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/data.php:947
+msgid "Copied"
+msgstr "Đã sao chép"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:313
+msgid "Custom CSS"
+msgstr "Tùy chỉnh CSS"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/short-share-link.php:226
+msgid "Daily"
+msgstr "Hàng ngày"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:749
+msgid "Default quantity is 1. Enable it to add more."
+msgstr "Số lượng mặc định là 1. Bật để thêm nhiều hơn."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:259
+msgid "Default: Display for admin"
+msgstr "Mặc định: chỉ hiển thị cho quản trị viên"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:589
+msgid "Depend"
+msgstr "Phụ thuộc"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:605
+msgid "DEPENDING ON"
+msgstr "PHỤ THUỘC VÀO"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:673
+msgid "Description"
+msgstr "Mô tả"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:488
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:526
+msgid "Description when no product found"
+msgstr "Mô tả khi không tìm thấy sản phẩm"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:479
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:517
+msgid "Description:"
+msgstr "Mô tả:"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:95
+msgid "Design"
+msgstr "Thiết kế"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:789
+msgid "Display \"Remove all\" button on product builder page"
+msgstr "Hiển thị nút \"Xóa tất cả\" trên trang product builder"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-layered-nav.php:21
+msgid "Display a list of attributes to filter products in your store."
+msgstr "Hiển thị danh sách thuộc tính để lọc sản phẩm trên cửa hàng."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-rating-filter.php:15
+msgid "Display a list of star ratings to filter products in your store."
+msgstr "Hiển thị danh sách xếp hạng để lọc sản phẩm trên cửa hàng."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-name-filter.php:15
+msgid "Display a search box."
+msgstr "Hiển thị hộp tìm kiếm."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-price-filter.php:14
+msgid "Display a slider to filter products in builder page by price."
+msgstr "Hiển thị thanh trượt để lọc sản phẩm trên trang builder theo giá."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:257
+msgid "Display get short share link for customer"
+msgstr "Hiển thị liên kết chia sẻ ngắn cho khách hàng"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:803
+msgid "Display search products form by ajax"
+msgstr "Hiện thị hộp tìm kiếm sản phẩm sử dụng ajax"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:243
+msgid "Display share link"
+msgstr "Hiển thị liên kết chia sẻ"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:201
+msgid "Distance from bottom"
+msgstr "Khoảng cách từ dưới lên "
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:280
+msgid "Do you want to remove all compatible?"
+msgstr "Bạn có muốn xóa hết cài đặt phụ thuộc"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:279
+msgid "Do you want to remove this tab?"
+msgstr "Bạn có muốn xóa thẻ này?"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/short-share-link.php:197
+msgid "Don't remove by cron"
+msgstr "Không xóa bởi cron"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:899
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:141
+msgid "Download PDF"
+msgstr "Tải về bản PDF"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:456
+msgid "Download PDF button"
+msgstr "Nút tải về bản PDF"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:115
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:141
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/short-share-link.php:80
+msgid "Edit"
+msgstr "Sửa"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:116
+msgid "Edit Product Builder"
+msgstr "Sửa Product Builder"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:142
+msgid "Edit Share link"
+msgstr "Sửa liên kết chia sẻ"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:96
+msgid "Email"
+msgstr "Email"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:597
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:717
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:732
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:747
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:761
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:774
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:787
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:801
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:815
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:832
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:849
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:866
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:330
+msgid "Enable"
+msgstr "Bật"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:868
+msgid ""
+"Enable it to disable the link to single product pages from the title of "
+"products."
+msgstr ""
+"Bật để tắt liên kết tới trang chi tiết sản phẩm khi nhấp vào tiêu đề sản phẩm"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:834
+msgid "Enable it to display out of stock products on product builder page"
+msgstr "Bật để hiển thị sản phẩm hết hàng trên trang product builder"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:851
+msgid "Enable it to hide the products which have zero prices."
+msgstr "Bật để ẩn sản phẩm có giá bằng 0."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:485
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:523
+msgid "Error description:"
+msgstr "Mô tả lỗi:"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:332
+msgid "Fill your product title or category title"
+msgstr "Điền tiêu đề sản phẩm hoặc tiêu đề danh mục"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-price-filter.php:96
+msgid "Filter"
+msgstr "Lọc"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-layered-nav.php:74
+msgid "Filter by"
+msgstr "Lọc theo"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-price-filter.php:20
+msgid "Filter by price"
+msgstr "Lọc theo giá"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:395
+msgid "First step"
+msgstr "Bước 1"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:529
+msgid "Footer of layout"
+msgstr "Phần chân trang PDF"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:356
+msgid "From"
+msgstr "Từ"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:298
+msgid "General"
+msgstr "Cài đặt chung"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:719
+msgid "Get all products in child categories"
+msgstr "Lấy tất cả sản phẩm trong danh mục con"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:581
+msgid "Get Key"
+msgstr "Lấy mã"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:851
+msgid "Get share link"
+msgstr "Lấy liên kết chia sẻ"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:159
+msgid "Get short link"
+msgstr "Lấy liên kết ngắn"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:343
+msgid "Header"
+msgstr "Tiêu đề"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:484
+msgid "Header of layout"
+msgstr "Phần đầu trang PDF"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:841
+msgid "Hide zero price product"
+msgstr "Ẩn sản phẩm có giá bằng 0"
+
+#. Author URI of the plugin
+msgid "https://villatheme.com"
+msgstr "https://villatheme.com"
+
+#. URI of the plugin
+msgid "https://villatheme.com/extensions/woocommerce-product-builder/"
+msgstr "https://villatheme.com/extensions/woocommerce-product-builder/"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:187
+msgid "Icon"
+msgstr "Biểu tượng"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:189
+msgid ""
+"If you use AJAX template and icon option is selected: send email, get share "
+"link, print, pdf button will use icon instead"
+msgstr ""
+"Nếu bạn sử dụng dạng AJAX template và tùy chọn biểu tượng được lựa chọn: gửi "
+"email, nhận liên kết chia sẻ, in, nút PDF sẽ sử dụng biểu tượng thay thế"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/short-share-link.php:53
+msgid "Image"
+msgstr "Ảnh"
+
+#. Description of the plugin
+msgid ""
+"Increases sales with Building product configuration for your online store. "
+"Help build a complete product from small components"
+msgstr ""
+"Giúp gia tăng doanh số với việc cấu hình trang xây dựng sản phẩm trên cửa "
+"hàng trực tuyến của bạn. Giúp dễ cho việc xây dựng bộ sản phẩm hoàn chỉnh từ "
+"những chi tiết nhỏ nhất. "
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-price-filter.php:95
+msgid "Max price"
+msgstr "Giá tối đa"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview-popup.php:32
+msgid "Message"
+msgstr "Thông báo"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:385
+msgid "Message Body"
+msgstr "Nội dung email"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:420
+msgid "Message thank you"
+msgstr "Lời nhắn cảm ơn"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/ajax.php:25
+msgid "Method is not exist"
+msgstr "Phương thức không tồn tại"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-price-filter.php:94
+msgid "Min price"
+msgstr "Giá tối thiểu"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:196
+msgid "Mobile"
+msgstr "Chế độ điện thoại"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:117
+msgid "Modern"
+msgstr "Modern"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/short-share-link.php:54
+msgid "Name"
+msgstr "Tên"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:117
+msgid "New Product Builder"
+msgstr "Product Builder mới"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:143
+msgid "New Share link"
+msgstr "Liên kết chia sẻ mới"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:214
+msgid "Next"
+msgstr "Tiếp theo"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/archive-product-builder.php:53
+msgid "Next <span class=\"meta-nav\">&larr;</span>"
+msgstr "Tiếp <span class=\"meta-nav\">&larr;</span>"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/data.php:948
+msgid "No link was created"
+msgstr "Không có liên kết nào được tạo"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:121
+msgid "No Product Builders found"
+msgstr "Không tìm thấy Product Builders"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:122
+msgid "No Product Builders found in Trash"
+msgstr "Không tìm thấy Product Builders trong thùng rác"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/ajax.php:78
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/ajax.php:95
+msgid "No product was found"
+msgstr "Không tìm thấy sản phẩm"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:147
+msgid "No Share link found"
+msgstr "Không tìm thấy liên kết chia sẻ"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:148
+msgid "No Share link found in Trash"
+msgstr "Không tìm thấy liên kết chia sẻ trong thùng rác"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:824
+msgid "Out of stock products"
+msgstr "Sản phẩm hết hàng"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:585
+msgid ""
+"Please fill your key what you get from <a target=\"_blank\" href=\"https:"
+"//villatheme.com/my-download\">Villatheme</a>. You can automatically update "
+"WooCommerce Product Builder plugin. See guide <a target=\"_blank\" "
+"href=\"https://villatheme.com/knowledge-base/how-to-use-auto-update-"
+"feature/\">here</a>"
+msgstr ""
+"Vui lòng lấy mã bạn nhận được từ <a target=\"_blank\" href=\"https:"
+"//villatheme.com/my-download\">Villatheme</a> để tự động cập nhật "
+"WooCommerce Product Builder plugin. Vui lòng theo dõi hướng dẫn <a "
+"target=\"_blank\" href=\"https://villatheme.com/knowledge-base/how-to-use-"
+"auto-update-feature/\">ở đây</a>"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:277
+msgid "Please fill your step title"
+msgstr "Vui lòng nhập tên bước"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:278
+msgid "Please fill your tab title that you want to change."
+msgstr "Vui lòng nhập tiêu đề thẻ mà bạn muốn thay đổi."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/woocommerce-product-builder.php:54
+msgid ""
+"Please install WooCommerce and active. WooCommerce Product Builder is going "
+"to working."
+msgstr ""
+"Vui lòng cài đặt và kích hoạt  WooCommerce để sử dụng WooCommerce Product "
+"Builder"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:599
+msgid "Please save first to load all steps."
+msgstr "Vui lòng lưu trước để tải tất cả các bước."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:288
+msgid "Please select product for this step"
+msgstr "Vui lòng lựa chọn sản phẩm cho bước này"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:200
+msgid "Preview"
+msgstr "Xem trước"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:754
+msgid "Preview button always show "
+msgstr "Luôn hiển thị nút xem trước"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:208
+msgid "Previous"
+msgstr "Trước"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/ajax.php:552
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/process.php:315
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:28
+msgid "Price"
+msgstr "Giá"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/data.php:66
+msgid "Price high to low"
+msgstr "Giá từ cao tới thấp"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/data.php:65
+msgid "Price low to high"
+msgstr "Giá từ thấp tới cao"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-price-filter.php:98
+msgid "Price:"
+msgstr "Giá:"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:170
+msgid "Primary background color"
+msgstr "Màu nền cơ bản"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:159
+msgid "Primary text color"
+msgstr "Màu chữ cơ bản"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:883
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:132
+msgid "Print"
+msgstr "In"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:97
+msgid "Print & PDF"
+msgstr "In & PDF"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:442
+msgid "Print button"
+msgstr "Nút lệnh để in"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/ajax.php:550
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/process.php:315
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:27
+msgid "Product"
+msgstr "Sản phẩm"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/elementor/widget.php:19
+msgid "Product Builder"
+msgstr "Product Builder"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:111
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:112
+msgid "Product Builders"
+msgstr "Product Builders"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:808
+msgid "Product is required each step"
+msgstr "Bắt buộc chọn sản phẩm mỗi bước"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:579
+msgid "Product per page"
+msgstr "Sản phẩm trên một trang"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:302
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:324
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/short-share-link.php:40
+msgid "Products"
+msgstr "Sản phẩm"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/product-template.php:32
+msgid "Products are not found."
+msgstr "Không tìm thấy sản phẩm."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:294
+msgid "Products Configuration"
+msgstr "Products Configuration"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/ajax.php:551
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/process.php:315
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/short-share-link.php:55
+msgid "Quantity"
+msgstr "Số lượng"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:740
+msgid "Quantity field"
+msgstr "Trường số lượng"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:421
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:829
+msgid "Remove all"
+msgstr "Xóa tất cả"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:780
+msgid "Remove all button "
+msgstr "Nút xóa tất cả"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:858
+msgid "Remove product title link"
+msgstr "Bỏ liên kết tiêu đề sản phẩm"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:272
+msgid "Remove short share link records after x day(s)"
+msgstr "Xóa bản ghi liên kết chia sẻ ngắn sau x ngày"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:594
+msgid "Save"
+msgstr "Lưu"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:598
+msgid "Save & Check Key"
+msgstr "Lưu & kiểm tra mã"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:152
+msgid "Save short link edited"
+msgstr "Lưu liên kết ngắn đã được sửa"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:333
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-name-filter.php:21
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-name-filter.php:55
+msgid "Search product"
+msgstr "Tìm kiếm sản phẩm"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:120
+msgid "Search Product Builders"
+msgstr "Tìm kiếm Product Builders"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:794
+msgid "Search product form"
+msgstr "Hộp tìm kiếm sản phẩm"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:146
+msgid "Search Share link"
+msgstr "Tìm kiếm liên kết chia sẻ"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:244
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:915
+msgid "Search..."
+msgstr "Tìm kiếm..."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/single/add-to-cart-simple.php:30
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/single/variation-add-to-cart-button.php:16
+msgid "Select"
+msgstr "Chọn"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:734
+msgid "Select multiple products in a step"
+msgstr "Chọn nhiều sản phẩm trong một bước"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:319
+msgid "Select products"
+msgstr "Chọn sản phẩm"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview-popup.php:40
+msgid "Send"
+msgstr "Gửi"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview-popup.php:10
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:124
+msgid "Send email to your friend"
+msgstr "Gửi mail cho bạn bè"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:867
+msgid "Send to your friends"
+msgstr "Gửi mail cho bạn bè"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:133
+msgid "Set color and background color for WooCommerce Product Builder buttons."
+msgstr "Thiết lập màu và màu nền cho các nút trên WooCommerce Product Builder"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:215
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:611
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:137
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:138
+msgid "Share link"
+msgstr "Liên kết chia sẻ"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/short-share-link.php:195
+msgid "Short share link"
+msgstr "Liên kết chia sẻ ngắn"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:951
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:510
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:541
+msgid "Shortcode:"
+msgstr "Mã ngắn:"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:470
+msgid "Show short description"
+msgstr "Hiển thị mô tả ngắn"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/data.php:67
+msgid "Sort by latest"
+msgstr "Sắp xếp theo mới nhất"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:686
+msgid "Sort default"
+msgstr "Sắp xếp mặc định"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:604
+msgid "STEP"
+msgstr "BƯỚC"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/short-share-link.php:59
+msgid "Step"
+msgstr "Bước"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:459
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:505
+msgid "Step icon:"
+msgstr "Biểu tượng bước:"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:456
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:502
+msgid "Step options"
+msgstr "Tùy chọn bước"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:371
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview-popup.php:25
+msgid "Subject"
+msgstr "Chủ đề"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/ajax.php:553
+msgid "Subtotal"
+msgstr "Tổng phụ đơn hàng"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:108
+msgid "Template"
+msgstr "Kiểu hiển thị"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:186
+msgid "Text"
+msgstr "Chữ"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:137
+msgid "Text color"
+msgstr "Màu chữ"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:661
+msgid "Text prefix each step"
+msgstr "Tiền tố mỗi bước"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:409
+msgid "The content of message body."
+msgstr "Nội dung email."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:397
+msgid "The content of message."
+msgstr "Nội dung email."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:380
+msgid "The first text display on subject field of email."
+msgstr "Nội dung đầu tiên hiển thị trên chủ đề của email."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:428
+msgid "The messages display after sent email."
+msgstr "Tin nhắn hiển thị sau khi gửi email."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:405
+msgid "The subject of email."
+msgstr "Chủ đề của email."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/data.php:949
+msgid ""
+"This product is dependent on a product from the previous step(s) which may "
+"be missing/removed"
+msgstr "Sản phẩm này phụ thuộc vào một sản phẩm nào đó ở bước trước đã bị xóa"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-layered-nav.php:75
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-name-filter.php:22
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-price-filter.php:21
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-rating-filter.php:22
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/data.php:63
+msgid "Title A-Z"
+msgstr "Tiêu đề A-Z"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/data.php:64
+msgid "Title Z-A"
+msgstr "Tiêu đề Z-A"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview-popup.php:18
+msgid "To"
+msgstr "Tới"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/ajax.php:561
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/process.php:315
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:29
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:98
+msgid "Total"
+msgstr "Tổng"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:407
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:463
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/step.php:808
+msgid "Total:"
+msgstr "Tổng:"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:98
+msgid "Update"
+msgstr "Cập nhật"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:118
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:144
+msgid "View"
+msgstr "Xem"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:119
+msgid "View Product Builder"
+msgstr "Xem Product Builder"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:145
+msgid "View Share link"
+msgstr "Xem liên kết chia sẻ"
+
+#. Author of the plugin
+msgid "VillaTheme"
+msgstr "VillaTheme"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-layered-nav.php:23
+msgid "WC Product Builder Attribute Filter"
+msgstr "Bộ lọc thuộc tính WC Product Builder "
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-price-filter.php:16
+msgid "WC Product Builder Filter Price"
+msgstr "Bộ lọc giá WC Product Builder "
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-name-filter.php:17
+msgid "WC Product Builder Name Filter"
+msgstr "Bộ lọc tên WC Product Builder "
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/includes/class-widget-rating-filter.php:17
+msgid "WC Product Builder Rating Filter"
+msgstr "Bộ lọc xếp hạng WC Product Builder "
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/sidebar.php:37
+msgid "WC Product Builder Sidebar"
+msgstr "WC Product Builder Sidebar"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/frontend/sidebar.php:39
+msgid "Widgets in this area will be shown on product builder page."
+msgstr ""
+"Các tiện ích trong khu vực này sẽ được hiển thị trên trang product builder"
+
+#. Name of the plugin
+msgid "Woocommerce Product Builder Premium"
+msgstr "Woocommerce Product Builder Premium"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:610
+msgid "WooCommerce Product Builder Setting"
+msgstr "Cài đặt WooCommerce Product Builder"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:85
+msgid "WooCommerce Product Builder Settings"
+msgstr "Cài đặt WooCommerce Product Builder"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:349
+msgid "WordPress"
+msgstr "WordPress"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:514
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:545
+msgid "Your admin email."
+msgstr "Email quản trị của bạn."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/templates/content-product-builder-preview.php:20
+msgid "Your chosen list"
+msgstr "Danh sách đã chọn"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:401
+msgid "Your email."
+msgstr "Địa chỉ email."
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:522
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:553
+msgid "Your site url"
+msgstr "Url trang web của bạn"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:518
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/settings.php:549
+msgid "Your store address"
+msgstr "Địa chỉ cửa hàng của bạn"
+
+#: D:/git2019/PREMIUM-VERSION/woocommerce-product-builder/woocommerce-product-builder/admin/admin.php:667
+msgid "{step_number} - Number of current step"
+msgstr "{step_number} - Số của bước hiện tại "

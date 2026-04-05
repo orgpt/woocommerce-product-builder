@@ -1,0 +1,237 @@
+/** 2.3.7 - 2025.11.17 **/
+– Added: warning message when saving a step without selected category or product.
+- Added: Option Remember Modal State
+
+/** 2.3.6 - 2025.11.03 **/
+– Fixed: Error when save/load wc session
+
+/** 2.3.5 - 2025.08.22 **/
+- Fixed: Product image display issue when using the Avada theme.
+- Fixed: Product selection in default step not working properly
+– Fixed: Could not save step description
+– Fixed: Issue where the builder description did not display.
+– Updated: Compatible with WPML and Polylang
+– Updated: Update support class
+– Updated: Compatible with WP 6.8.2 and WC 10.1.0
+
+/** 2.3.4 - 2025.07.04 **/
+– Added: close button for ajax template popup
+– Updated: Update support class
+– Updated: Compatible with WP 6.8.1 and WC 9.9.5
+
+/** 2.3.3 - 2025.04.16 **/
+– Updated: Update file language
+– Updated: Update support class
+– Updated: Compatible with WP 6.8 and WC 9.8
+– Added: A fee option for the entire product builder
+
+/** 2.3.2 - 2025.03.28 **/
+– Updated: Update file language
+– Updated: Update support class
+– Updated: Compatible with WC 9.7.1
+- Updated: Improved "Template" setting layout for better feature visualization.
+
+/** 2.3.1 - 2025.03.07 **/
+- Dev: Add Action hook: do_action('woopb_before_title_product_added',$product) and do_action('woopb_after_title_product_added',$product)
+- Dev: Add Filter hook: 'woopb_ajax_get_step_product_price','woopb_ajax_get_step_product_title', 'woopb_ajax_get_step_product_desc'
+- Fixed: Fixed show and hide product select button in ajax template
+- Fixed: Fixed responsive style ajax template
+– Updated: Compatible with WP 6.7.2 and WC 9.7.0
+– Updated: Compatible with Electron theme by Ninetheme
+– Updated: Update support class
+
+/** 2.3.0 - 2025.01.16 **/
+- Fixed: Fixed the option to remove links for all displayed products.
+- Added: Added plugin layout on both back end and front end
+– Updated: Compatible with WP 6.7.1 and WC 9.5.3
+– Updated: Update support class
+
+/** 2.2.8 - 2024.11.19 **/
+– Updated: Compatible with WP 6.7 and WC 9.3.3
+- Updated: Compatibility B2BKing
+– Updated: Update support class
+- Updated: Hide the Select button until variation chosen
+
+/** 2.2.7 - 2024.07.16 **/
+- Added: Compatibility with EPOW - Custom Product Options for WooCommerce by VillaTheme
+- Updated: Compatibility check with WP 6.6 and WC 9.0
+- Fixed: Search product at each step
+
+/** 2.2.6 - 2024.04.23 **/
+– Updated: Compatible with WP 6.5 and WC 8.7
+– Updated: Update support class
+
+/** 2.2.5 - 2023.10.12 **/
+- Add: Duplicate product builder
+- Fixed: Product is required at each step with Ajax template
+– Updated: VillaTheme_Support
+
+/** 2.2.4 - 2023.04.20 **/
+- Fixed: Product builder quantity
+
+/** 2.2.3 - 2023.04.11 **/
+- Added: Vietnamese translation
+- Fixed: Sort products for search results
+– Updated: Compatible with 'High-Performance order storage (COT)'
+
+/** 2.2.2 - 2022.09.09 **/
+- Fix: Selected attributes not showing on preview page if attribute type is custom or number of attributes is greater than 2
+
+/** 2.2.1 - 2022.07.07 **/
+- Updated: Description for step when no product found
+- Updated: Enable/Disable short description when print
+- Fix: Show search pagination in classic template
+
+/** 2.2.0 - 2022.06.30 **/
+- Fix: Insert image to email content
+- Fix: AJAX template, depend notice
+- Fix: Remove pagination in count filter
+- Updated: Scroll bar to top when change page (AJAX template)
+- Updated: Print button
+- Updated: Download PDF
+- Updated: Check compatible with WordPress 6.0 & WooCommerce 6.5
+
+/** 2.1.5 - 2022.03.31 **/
+- Fix: Empty section when no product found in a step
+- Fix: Improve 2 new template
+
+/** 2.1.4 - 2022.03.30 **/
+– Updated: VillaTheme_Support
+
+/**2.1.3 - 2022.03.23**/
+- Fixed: Display price at products selected section
+- Fixed: Ignore step when no product found and require product each step
+- Fixed: Icon & description after sort steps
+- Updated: VillaTheme_Support
+
+/**2.1.2 - 2022.01.15**/
+- Fixed: RTL support for AJAX template
+- Update: is_ajax is deprecated since WC version 6.1.0! Use wp_doing_ajax instead.
+
+/**2.1.1 - 2021.11.22**/
+- Fixed: AJAX template duplicate step
+
+/**2.1.0 - 2021.11.05**/
+- Add: Option sort by latest products
+- Add: 2 new template
+
+/**2.0.9 - 2021.08.03**/
+- Fixed: Can not add product to cart after search
+
+/**2.0.8 - 2021.05.06**/
+- Fixed: Can not add single product to cart
+- Fixed: Display image of product parent if can not find product variation image
+- Updated: Compatible with Woodmart v5.3.6
+
+/**2.0.7 - 2021.01.27**/
+- Fixed: Attributes depend
+- Updated: Lightbox for product thumb
+- Updated: Add option Show product within out of stock
+- Updated: Add option Hide product with price is zero
+- Updated: Add option Remove link from product
+
+/**2.0.6 - 2020.11.11**/
+- Updated: Get short share link feature
+- Updated: Clear filter option when redirect step
+- Updated: Change variation image feature
+- Updated: Select variation product with attribute 'any'
+- Updated: Steps table & sidebar change to responsive
+- Updated: Mobile layout
+- Fixed: Check update request
+- Fixed: Show select button when ajax search products
+
+/**2.0.5.4 - 2020.06.12**/
+- Fix: Add to cart when use shortcode
+- Updated: Use enter for search items in back end
+- Updated: Steps sortable in back end
+
+/**2.0.5.3 - 2020.05.20**/
+- Updated: Compatible with Elementor
+- Updated: Clear selected items in product builder after add to cart
+
+/**2.0.5.2 - 2020.05.15**/
+- Fix: Share link
+
+/**2.0.5.1 - 2020.05.05**/
+- Updated: Add shortcode [woocommerce_product_builder id=''], using on post or page
+- Updated: Add description field
+
+/**2.0.5 - 2020.04.25**/
+- Added: Remove all product selected button
+- Added: Search product form
+- Added: Product is required each step
+- Added: Select attributes depend
+- Fix: Exclude custom attribute when use attribute depend
+- Updated: Sort default title A->Z
+- Updated: Link for share after build product
+
+/**2.0.4.5 - 2019.05.01**/
+- Updated: Auto get key
+- Updated: Products pagination when there are too many pages
+
+/**2.0.4.4 - 2018.12.06**/
+- Fixed: Remove product
+- Added: Always show preview button
+
+/**2.0.4.3 - 2018.12.05**/
+- Fixed: Not save session
+
+/**2.0.4.2 - 2018.12.04**/
+- Fixed: Compatible
+- Fixed: Select products in step
+
+/**2.0.4.1 - 2018.12.03**/
+- Fixed: Select many categories in step
+
+/**2.0.4 - 2018.11.30**/
+- Fixed: Class support
+- Fixed: Check SSL
+- Fixed: Tab JS in backend
+- Fixed: CSS on Price Filter widget
+- Fixed: Include WC Product Builder Widget
+- Fixed: Reload preview page when remove product
+- Fixed: Term IDs query
+- Fixed: Session cart
+
+/**2.0.3.1 - 2018.09.26**/
+- Fixed: Compatible with many attributes
+- Update : Class support
+
+/**2.0.3 - 2018.09.26**/
+- Fixed: Remove product on the step
+- Fixed: Product compatible
+
+/**2.0.2 - 2018.08.02**/
+- Fixed: Class check update
+- Fixed: Filter price widget CSS
+- Fixed: Layer filter widget CSS
+- Added: Image thumb on select
+- Added: Support RTL
+
+/**2.0.1 - 2018.06.26**/
+- Fixed: Extension page
+- Fixed: Reponsive
+- Fixed: Auto update
+- Fixed: Check key
+
+/**2.0.0 - 2018.06.11**/
+- Rebuild new version
+- Optimize code
+- Added: New features
+
+/**1.0.2 - 2017.07.05 **/
+- Added: 2 layouts option (2 columns or 3 columns)
+- Added: Change quantity product on review page
+- Added: Text prefix on each step
+- Fixed: Select box product variable.
+- Fixed: Compatible with WooCommerce 3.1.0
+
+/**1.0.1 - 2017.05.17 **/
+- Updated: Responsive post for post type.
+- Added: Select multiple product in a step.
+- Fixed: Chose product variable.
+- Updated: Button Clear all chosen list.
+- Fixed: Filter product and multi filter product.
+
+/**1.0.0 - 2017.05.11 **/
+~ The first released.
