@@ -1724,6 +1724,11 @@
   background-color: #020100 !important;
 }
 
+.woopb-close {
+  background-color: #d31b29 !important;
+  color: #d31b29 !important;
+}
+
 .amount {
   color: rgb(255, 255, 255);
 }
