@@ -127,10 +127,6 @@
   color: inherit !important;
 }
 
-.vi-wpb-wrapper .woopb-back-to-selector {
-  flex-direction: row-reverse;
-}
-
 .woopb-back-to-selector .woopb-back-to-selector-icon {
   mask: url("../images/previous-icon.svg") no-repeat center/contain;
   -webkit-mask: url("../images/previous-icon.svg") no-repeat center/contain;
