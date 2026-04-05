@@ -1728,20 +1728,15 @@
   min-width: 130px;
 }
 
-.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .woocommerce-Price-amount,
-.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .amount {
-  display: inline-flex;
+.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .woocommerce-Price-amount.amount {
+  display: inline-flex !important;
   align-items: center;
   justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price > .amount,
-.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price > .woocommerce-Price-amount.amount,
-.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .price > .amount {
-  display: block;
-  width: 100%;
-  text-align: right;
+  flex-direction: row;
+  gap: 2px;
+  width: auto;
+  align-self: flex-end;
+  white-space: nowrap;
 }
 
 .woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .woocommerce-price-suffix {
@@ -1761,7 +1756,15 @@
 }
 
 .woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .woocommerce-Price-currencySymbol {
-  margin-inline-start: 2px;
+  display: inline-block;
+  margin: 0 0 0 2px;
+  order: 2;
+}
+
+.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .woocommerce-Price-amount.amount bdi {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .woocommerce-Price-amount.amount,
