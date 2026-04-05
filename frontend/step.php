@@ -1401,7 +1401,9 @@ class VI_WPRODUCTBUILDER_FrontEnd_Step {
 		$ajax_template        = ['ajax', 'ajax-layout-1', 'ajax-layout-2'];
 		$list_template_modern = ['modern', 'modern-layout-2', 'modern-layout-3'];
 		$style_file           = (in_array(VI_WOOPBTEMPLATE_STYLE, $list_template_modern)) ? 'woocommerce-product-builder-2' : (in_array(VI_WOOPBTEMPLATE_STYLE, $ajax_template) ? 'woocommerce-product-builder-ajax' : 'woocommerce-product-builder');
-		$suffix               = WP_DEBUG ? '.css' : '.min.css';
+		// Load the unminified stylesheet so custom layout overrides added in the theme/plugin CSS
+		// are applied consistently without requiring a separate minified rebuild.
+		$suffix               = '.css';
 
 
 		wp_register_style('woocommerce-product-builder', VI_WPRODUCTBUILDER_CSS . $style_file . $suffix, array(), VI_WPRODUCTBUILDER_VERSION);
