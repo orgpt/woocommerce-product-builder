@@ -1406,15 +1406,22 @@ class VI_WPRODUCTBUILDER_FrontEnd_Step {
 		// Load the unminified stylesheet so custom layout overrides added in the theme/plugin CSS
 		// are applied consistently without requiring a separate minified rebuild.
 		$suffix               = '.css';
+		$style_path           = VI_WPRODUCTBUILDER_CSS_DIR . $style_file . $suffix;
+		$preview_style_file   = 'woocommerce-product-builder-preview';
+		$preview_style_path   = VI_WPRODUCTBUILDER_CSS_DIR . $preview_style_file . $suffix;
+		$rtl_style_file       = 'woocommerce-product-builder-rtl.css';
+		$rtl_style_path       = VI_WPRODUCTBUILDER_CSS_DIR . $rtl_style_file;
+		$style_version        = file_exists( $style_path ) ? filemtime( $style_path ) : VI_WPRODUCTBUILDER_VERSION;
+		$preview_version      = file_exists( $preview_style_path ) ? filemtime( $preview_style_path ) : VI_WPRODUCTBUILDER_VERSION;
+		$rtl_version          = file_exists( $rtl_style_path ) ? filemtime( $rtl_style_path ) : VI_WPRODUCTBUILDER_VERSION;
 
 
-		wp_register_style('woocommerce-product-builder', VI_WPRODUCTBUILDER_CSS . $style_file . $suffix, array(), VI_WPRODUCTBUILDER_VERSION);
+		wp_register_style('woocommerce-product-builder', VI_WPRODUCTBUILDER_CSS . $style_file . $suffix, array(), $style_version);
 
-		$style_preview_file = 'woocommerce-product-builder-preview';
-		wp_register_style('woocommerce-product-builder-preview', VI_WPRODUCTBUILDER_CSS . $style_preview_file . $suffix, array(), VI_WPRODUCTBUILDER_VERSION);
+		wp_register_style('woocommerce-product-builder-preview', VI_WPRODUCTBUILDER_CSS . $preview_style_file . $suffix, array(), $preview_version);
 
 		if (is_rtl()) {
-			wp_register_style('woocommerce-product-builder-rtl', VI_WPRODUCTBUILDER_CSS . 'woocommerce-product-builder-rtl.css', array(), VI_WPRODUCTBUILDER_VERSION);
+			wp_register_style('woocommerce-product-builder-rtl', VI_WPRODUCTBUILDER_CSS . $rtl_style_file, array(), $rtl_version);
 		}
 
 		/*Add script*/
