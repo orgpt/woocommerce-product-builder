@@ -1719,54 +1719,6 @@
   font-size: 10px;
 }
 
-.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price {
-  white-space: normal;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  min-width: 130px;
-}
-
-.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .woocommerce-Price-amount.amount {
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: row;
-  gap: 2px;
-  width: auto;
-  align-self: flex-end;
-  white-space: nowrap;
-}
-
-.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .woocommerce-price-suffix {
-  display: block;
-  width: 100%;
-  margin-top: 2px;
-  font-size: 12px;
-  line-height: 1.25;
-  white-space: normal;
-  text-align: right;
-  clear: both;
-}
-
-.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price br {
-  display: block;
-  content: "";
-}
-
-.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .woocommerce-Price-currencySymbol {
-  display: inline-block;
-  margin: 0 0 0 2px;
-  order: 2;
-}
-
-.woocommerce-product-builder-wrapper .woopb-product .woopb-product-price .woocommerce-Price-amount.amount bdi {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-}
-
 .woocommerce-Price-amount.amount,
 .riyal-svg {
   color: rgb(232, 30, 46) !important;
