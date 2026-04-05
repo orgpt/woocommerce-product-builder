@@ -18,8 +18,10 @@
   color: inherit;
 }
 .woocommerce-product-builder-table-review thead th, .woocommerce-product-builder-table-review tfoot th {
-  background-color: #f9fafb;
+  background-color: #111111;
   padding: 15px 30px;
+  color: #ffffff;
+  border-bottom: 1px solid #f79923;
 }
 .woocommerce-product-builder-table-review thead th:not(:first-child), .woocommerce-product-builder-table-review tfoot th:not(:first-child) {
   text-align: center;
