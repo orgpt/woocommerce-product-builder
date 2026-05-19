@@ -305,6 +305,10 @@ jQuery(document).ready(function ($) {
                         }
                     });
 
+                if (_woo_product_builder_params.templateStyle === 'ajax-layout-1') {
+                    this.modal.addClass('woopb-no-filters');
+                }
+
                 this.searchForm = $('.woopb-search').on('keyup', this.search);
 
                 this.sortForm = $('.woopb-sort').on('change', () => this.changeSort());
@@ -463,7 +467,10 @@ jQuery(document).ready(function ($) {
                 this.modal.find('.woopb-modal-products').html(html);
                 this.modal.find('.woopb-step-pagination').html(pagination);
 
-                if (filter) {
+                if (_woo_product_builder_params.templateStyle === 'ajax-layout-1') {
+                    this.filters.empty().hide();
+                    this.modal.find('.woopb-mobile-filters-control').hide();
+                } else if (filter) {
                     this.filters.html(filter);
                     $(document.body).trigger('init_price_filter');
                 } else {

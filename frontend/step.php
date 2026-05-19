@@ -1425,7 +1425,9 @@ class VI_WPRODUCTBUILDER_FrontEnd_Step {
 		}
 
 		/*Add script*/
-		$suffix = WP_DEBUG ? '.js' : '.min.js';
+		// Load the unminified script so frontend behavior changes apply immediately
+		// without requiring a separate minified rebuild.
+		$suffix = '.js';
 		$theme  = wp_get_theme(); // gets the current theme
 		if ('Electron' == $theme->name || 'Electron' == $theme->parent_theme) {
 			wp_register_script('woocommerce-product-builder', VI_WPRODUCTBUILDER_JS . 'woocommerce-product-builder' . $suffix, array('jquery'), VI_WPRODUCTBUILDER_VERSION, false);
