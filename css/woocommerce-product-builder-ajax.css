@@ -697,7 +697,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 99999;
+  z-index: 2147483000;
   line-height: 1;
   /* Track */
   /* Handle */
@@ -1378,6 +1378,7 @@
 .vi-wpb-wrapper.vi-wpb-ajax-layout-1 #woopb-modal {
   background-color: rgba(6, 3, 4, 0.84);
   backdrop-filter: blur(8px);
+  z-index: 2147483000;
 }
 .vi-wpb-wrapper.vi-wpb-ajax-layout-1 #woopb-modal.woopb-no-filters .woopb-modal-left,
 .vi-wpb-wrapper.vi-wpb-ajax-layout-1 .woopb-entry-content.woopb-has-sidebar #woopb-modal.woopb-no-filters .woopb-modal-left,
