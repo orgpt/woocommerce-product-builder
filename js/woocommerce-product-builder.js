@@ -309,6 +309,10 @@ jQuery(document).ready(function ($) {
                     this.modal.addClass('woopb-no-filters');
                 }
 
+                if (this.modal.parent()[0] !== document.body) {
+                    this.modal.appendTo('body');
+                }
+
                 this.searchForm = $('.woopb-search').on('keyup', this.search);
 
                 this.sortForm = $('.woopb-sort').on('change', () => this.changeSort());
