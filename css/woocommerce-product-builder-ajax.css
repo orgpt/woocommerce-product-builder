@@ -1435,8 +1435,8 @@ body.viwcpb_no_scroll .woodmart-toolbar {
 .vi-wpb-wrapper.vi-wpb-ajax-layout-1 #woopb-modal .woopb-close-modal {
   width: 42px;
   height: 42px;
-  top: 16px;
-  right: 16px;
+  top: -25px;
+  right: -9px;
   font-size: 30px;
   line-height: 36px;
   border-radius: 999px;
