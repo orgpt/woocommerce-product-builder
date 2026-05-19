@@ -56,7 +56,7 @@ if (!defined('ABSPATH')) {
                     <span class="woopb-icon woopb-icon-svg woopb-icon-share-new"> </span>
                     <?php
                 } else {
-                    esc_html_e('Get share link', 'woocommerce-product-builder');
+                    esc_html_e('رابط المشاركة', 'woocommerce-product-builder');
                 }
                 ?>
             </div>
