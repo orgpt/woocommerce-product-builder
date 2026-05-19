@@ -207,6 +207,40 @@
 .viwcpb_no_scroll {
   overflow: hidden;
 }
+html.viwcpb_no_scroll body > header,
+body.viwcpb_no_scroll > header,
+html.viwcpb_no_scroll body > footer,
+body.viwcpb_no_scroll > footer,
+html.viwcpb_no_scroll #masthead,
+body.viwcpb_no_scroll #masthead,
+html.viwcpb_no_scroll #site-header,
+body.viwcpb_no_scroll #site-header,
+html.viwcpb_no_scroll #site-footer,
+body.viwcpb_no_scroll #site-footer,
+html.viwcpb_no_scroll .main-header,
+body.viwcpb_no_scroll .main-header,
+html.viwcpb_no_scroll .site-header,
+body.viwcpb_no_scroll .site-header,
+html.viwcpb_no_scroll .site-footer,
+body.viwcpb_no_scroll .site-footer,
+html.viwcpb_no_scroll .sticky-header,
+body.viwcpb_no_scroll .sticky-header,
+html.viwcpb_no_scroll .header-sticky,
+body.viwcpb_no_scroll .header-sticky,
+html.viwcpb_no_scroll .whb-header,
+body.viwcpb_no_scroll .whb-header,
+html.viwcpb_no_scroll .whb-sticked,
+body.viwcpb_no_scroll .whb-sticked,
+html.viwcpb_no_scroll .wd-header-wrapper,
+body.viwcpb_no_scroll .wd-header-wrapper,
+html.viwcpb_no_scroll .wd-sticky-wrapper,
+body.viwcpb_no_scroll .wd-sticky-wrapper,
+html.viwcpb_no_scroll .woodmart-sticky-header,
+body.viwcpb_no_scroll .woodmart-sticky-header,
+html.viwcpb_no_scroll .woodmart-toolbar,
+body.viwcpb_no_scroll .woodmart-toolbar {
+  z-index: 1 !important;
+}
 
 .woopb-loading {
   position: relative;
