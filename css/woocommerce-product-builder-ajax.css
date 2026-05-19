@@ -208,6 +208,7 @@
   overflow: hidden;
 }
 html.viwcpb_no_scroll body > header,
+html.viwcpb_no_scroll .whb-main-header,
 body.viwcpb_no_scroll > header,
 html.viwcpb_no_scroll body > footer,
 body.viwcpb_no_scroll > footer,
