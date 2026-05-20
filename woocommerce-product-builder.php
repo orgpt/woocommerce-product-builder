@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'VI_WPRODUCTBUILDER_VERSION', '2.3.7' );
+define( 'VI_WPRODUCTBUILDER_VERSION', '9.3.7' );
 /**
  * Detect plugin. For use on Front End only.
  */
