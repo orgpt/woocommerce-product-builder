@@ -2039,4 +2039,8 @@ body #woopb-modal .woopb-close-modal {
   border: 1px solid rgba(255, 103, 31, 0.18) !important;
 }
 
+.woopb-modal-product.product {
+  padding: 15px;
+}
+
 /*# sourceMappingURL=woocommerce-product-builder-ajax.css.map */
