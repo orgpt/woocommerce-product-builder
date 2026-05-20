@@ -3,7 +3,7 @@
  * Plugin Name: Woocommerce Product Builder Premium
  * Plugin URI: https://villatheme.com/extensions/woocommerce-product-builder/
  * Description: Increases sales with Building product configuration for your online store. Help build a complete product from small components
- * Version: 2.3.7
+ * Version: 9.3.7
  * Author: VillaTheme
  * Author URI: https://villatheme.com
  * Requires Plugins: woocommerce
