@@ -306,7 +306,7 @@ jQuery(document).ready(function ($) {
                     });
 
                 if (_woo_product_builder_params.templateStyle === 'ajax-layout-1') {
-                    this.modal.addClass('woopb-no-filters');
+                    this.modal.addClass('woopb-no-filters woopb-modal-ajax-layout-1');
                 }
 
                 if (this.modal.parent()[0] !== document.body) {
