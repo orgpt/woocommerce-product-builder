@@ -1980,4 +1980,63 @@ body.viwcpb_no_scroll .woodmart-toolbar {
   z-index: 999999;
 }
 
+/* Final hard override for popup dark mode */
+body #woopb-modal {
+  background-color: rgba(6, 3, 4, 0.84) !important;
+}
+body #woopb-modal .woopb-modal-inner {
+  background: radial-gradient(circle at top right, rgba(255, 103, 31, 0.1), transparent 18%), linear-gradient(180deg, #171214 0%, #120d0f 100%) !important;
+  border: 1px solid rgba(255, 103, 31, 0.18) !important;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.62) !important;
+}
+body #woopb-modal .woopb-search,
+body #woopb-modal .woopb-sort,
+body #woopb-modal .variations td select {
+  background: linear-gradient(180deg, rgba(43, 40, 40, 0.96), rgba(34, 30, 31, 0.96)) !important;
+  color: #ede0d8 !important;
+  border: 1px solid rgba(255, 103, 31, 0.22) !important;
+}
+body #woopb-modal .woopb-modal-right .woopb-modal-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+body #woopb-modal .woopb-modal-right .woopb-modal-product {
+  background: linear-gradient(180deg, rgba(39, 39, 39, 0.98), rgba(31, 31, 31, 0.97)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+body #woopb-modal .woopb-modal-right .woopb-modal-product .woopb-product-title,
+body #woopb-modal .woopb-modal-right .woopb-modal-product .woopb-product-title a,
+body #woopb-modal .woopb-modal-right .woopb-modal-product .woopb-product-price,
+body #woopb-modal .woopb-modal-right .woopb-modal-product form.cart,
+body #woopb-modal .reset_variations,
+body #woopb-modal .woopb-modal-right .woopb-modal-product .quantity .button,
+body #woopb-modal .woopb-modal-right .woopb-modal-product .quantity .qty {
+  color: #f1e6df !important;
+}
+body #woopb-modal .woopb-modal-right .woopb-modal-product .woopb-product-short-description,
+body #woopb-modal .woopb-modal-right .woopb-modal-product .woocommerce-variation-description,
+body #woopb-modal .woopb-modal-right .woopb-modal-product .stock {
+  color: #b9b09f !important;
+}
+body #woopb-modal .woopb-modal-right .woopb-modal-product .woopb-product-image,
+body #woopb-modal .woopb-modal-right .woopb-modal-product .quantity {
+  background: rgba(34, 29, 30, 0.96) !important;
+  border-color: rgba(255, 103, 31, 0.16) !important;
+}
+body #woopb-modal .woopb-modal-right .woopb-modal-footer .woopb-page-item {
+  background: linear-gradient(180deg, #3b3839 0%, #302c2d 100%) !important;
+  border: 1px solid #4a4345 !important;
+  color: #ede0d8 !important;
+}
+body #woopb-modal .woopb-modal-right .woopb-modal-footer .woopb-page-item.woopb-active-page,
+body #woopb-modal .woopb-add-to-list-btn {
+  background: linear-gradient(180deg, #ff660f 0%, #ff4f08 100%) !important;
+  border-color: #ff5a14 !important;
+  color: #130d0d !important;
+}
+body #woopb-modal .woopb-close-modal {
+  background: rgba(51, 45, 46, 0.96) !important;
+  color: #f1e6df !important;
+  border: 1px solid rgba(255, 103, 31, 0.18) !important;
+}
+
 /*# sourceMappingURL=woocommerce-product-builder-ajax.css.map */
