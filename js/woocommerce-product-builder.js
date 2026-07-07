@@ -386,9 +386,11 @@ jQuery(document).ready(function ($) {
 
                     if (stepDesc) stepDesc = stepDesc.replace(/\r\n/g, "<br />");
 
+                    let visibleStepLabel = stepDesc || stepTitle;
+
                     stepHtml.attr('data-step_id', +$i + 1);
-                    stepHtml.find('.woopb-step-title').text(stepTitle);
-                    stepHtml.find('.woopb-step-desc').html(stepDesc);
+                    stepHtml.find('.woopb-step-title').html(visibleStepLabel);
+                    stepHtml.find('.woopb-step-desc').empty();
 
                     Store.currentStep = +$i + 1;
                     Builder.renderStep(productsHtml, products);
