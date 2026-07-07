@@ -6,7 +6,6 @@ defined('ABSPATH') || exit;
 
 <div class="woopb-step">
     <div class="woopb-step-header">
-        <div class="woopb-step-title"></div>
         <div class="woopb-step-desc"></div>
     </div>
     <div class="woopb-products">
