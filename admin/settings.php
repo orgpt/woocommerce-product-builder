@@ -226,14 +226,54 @@ class VI_WPRODUCTBUILDER_Admin_Settings {
                                                                name="<?php echo esc_attr( self::set_option_field( 'add_button_text' ) ); ?>"
                                                                value="<?php echo esc_attr( self::get_option_field( 'add_button_text', 'Select' ) ); ?>"
                                                         >
-                                                    </div>
+																	<?php
+														if ( $this->languages_count ) {
+															foreach ( $this->languages as $value ) {
+																?>
+                                                                <p><label for="<?php echo esc_attr( self::set_option_field( 'add_button_text_' . $value ) ) ?>"><?php
+																if ( isset( $this->languages_data[ $value ]['country_flag_url'] ) && $this->languages_data[ $value ]['country_flag_url'] ) {
+																	?><img src="<?php echo esc_url( $this->languages_data[ $value ]['country_flag_url'] ); ?>"> <?php
+																}
+																echo esc_html( $value );
+																if ( isset( $this->languages_data[ $value ]['translated_name'] ) ) {
+																	echo '(' . esc_html( $this->languages_data[ $value ]['translated_name'] ) . ')';
+																}
+																?>:</label></p>
+                                                                <input class="vi-ui input" type="text"
+                                                                       name="<?php echo esc_attr( self::set_option_field( 'add_button_text_' . $value ) ); ?>"
+                                                                       value="<?php echo esc_attr( self::get_option_field( 'add_button_text_' . $value, 'Select' ) ); ?>"
+                                                                >
+																<?php
+															}
+														}
+														?></div>
                                                     <div class="field">
                                                         <label for="<?php echo esc_attr( self::set_option_field( 'add_more_button_text' ) ) ?>"><?php esc_html_e( '"Add more" button text', 'woocommerce-product-builder' ) ?></label>
                                                         <input class="vi-ui input" type="text"
                                                                name="<?php echo esc_attr( self::set_option_field( 'add_more_button_text' ) ); ?>"
                                                                value="<?php echo esc_attr( self::get_option_field( 'add_more_button_text', 'Select More' ) ); ?>"
                                                         >
-                                                    </div>
+																	<?php
+														if ( $this->languages_count ) {
+															foreach ( $this->languages as $value ) {
+																?>
+                                                                <p><label for="<?php echo esc_attr( self::set_option_field( 'add_more_button_text_' . $value ) ) ?>"><?php
+																if ( isset( $this->languages_data[ $value ]['country_flag_url'] ) && $this->languages_data[ $value ]['country_flag_url'] ) {
+																	?><img src="<?php echo esc_url( $this->languages_data[ $value ]['country_flag_url'] ); ?>"> <?php
+																}
+																echo esc_html( $value );
+																if ( isset( $this->languages_data[ $value ]['translated_name'] ) ) {
+																	echo '(' . esc_html( $this->languages_data[ $value ]['translated_name'] ) . ')';
+																}
+																?>:</label></p>
+                                                                <input class="vi-ui input" type="text"
+                                                                       name="<?php echo esc_attr( self::set_option_field( 'add_more_button_text_' . $value ) ); ?>"
+                                                                       value="<?php echo esc_attr( self::get_option_field( 'add_more_button_text_' . $value, 'Select More' ) ); ?>"
+                                                                >
+																<?php
+															}
+														}
+														?></div>
                                                 </div>
                                                 <div class="equal width fields">
                                                     <div class="field">

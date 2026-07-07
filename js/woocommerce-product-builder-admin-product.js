@@ -61,7 +61,7 @@ jQuery(document).ready(function ($) {
 
     $('#post').on('submit', function(e) {
             // Nếu là post type woo_product_builder mới xử lý
-           
+
             const postType = $('#post_type').val();
             if (postType === 'woo_product_builder') {
                 // Lấy tất cả input có name bắt đầu bằng 'woopb-param'
@@ -90,7 +90,7 @@ jQuery(document).ready(function ($) {
             let tabs = data.tab_title;
             let list_content = data.list_content;
             console.log(list_content);
-        
+
             let is_valid = true;
             let tab_empty = [];
             if(list_content) {
@@ -122,7 +122,7 @@ jQuery(document).ready(function ($) {
                     e.preventDefault();
                     return false;
                 }
-                
+
             }
             }
         });
@@ -161,13 +161,28 @@ var woo_product_buider = {
             if (title == null || title == '') {
                 return;
             }
+            var translatedTitles = {};
+            if (Array.isArray(_woopb_params.languages)) {
+                _woopb_params.languages.forEach(function (language) {
+                    var translatedTitle = prompt(_woopb_params.tab_title_language.replace('%language%', language.label || language.slug));
+                    translatedTitles[language.slug] = translatedTitle || '';
+                });
+            }
             /*Menu*/
             var tab_data = jQuery('.woopb-tabs .menu a:first-child').clone();
             tab_data.find('.woopb-tab-title').text(title);
-            tab_data.addClass('active').attr('data-tab', tab_id).find('input').val(title);
+            tab_data.addClass('active').attr('data-tab', tab_id);
             jQuery('.woopb-tabs .menu').find('a').removeClass('active');
             jQuery('.woopb-tabs .menu').append(tab_data);
-            tab_data.find('.woopb-save-name').attr('name', `woopb-param[tab_title][${tab_id}]`);
+            tab_data.find('.woopb-save-name').each(function () {
+                var field = jQuery(this);
+                var language = field.data('language');
+                if (language) {
+                    field.attr('name', `woopb-param[tab_title_${language}][${tab_id}]`).val(translatedTitles[language] || '');
+                } else {
+                    field.attr('name', `woopb-param[tab_title][${tab_id}]`).val(title);
+                }
+            });
 
             /*Tab content*/
             var tab_content = jQuery('.woopb-tabs-content .tab').first().clone();
@@ -197,7 +212,22 @@ var woo_product_buider = {
                 return;
             }
             current_tab_item.find('.woopb-tab-title').text(title);
-            current_tab_item.find('input').val(title);
+            current_tab_item.find('.woopb-save-name').not('[data-language]').val(title);
+            current_tab_item.find('.woopb-save-name[data-language]').each(function () {
+                var field = jQuery(this);
+                var language = field.data('language');
+                var languageConfig = null;
+                jQuery.each(_woopb_params.languages || [], function (index, item) {
+                    if (item.slug === language) {
+                        languageConfig = item;
+                        return false;
+                    }
+                });
+                var translatedTitle = prompt(_woopb_params.tab_title_language.replace('%language%', (languageConfig && languageConfig.label) || language), field.val());
+                if (translatedTitle !== null) {
+                    field.val(translatedTitle);
+                }
+            });
         });
 
         /*Remove tab*/

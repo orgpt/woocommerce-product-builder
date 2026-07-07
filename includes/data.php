@@ -188,7 +188,34 @@ class VI_WPRODUCTBUILDER_Data {
 	}
 
 	public function get_param( $key ) {
+		$language = $this->get_current_language();
+		if ( $language && isset( $this->params[ $key . '_' . $language ] ) && '' !== $this->params[ $key . '_' . $language ] ) {
+			return $this->params[ $key . '_' . $language ];
+		}
+
 		return $this->params[ $key ] ?? '';
+	}
+
+	protected function get_current_language() {
+		if ( is_admin() && ! wp_doing_ajax() ) {
+			return '';
+		}
+
+		if ( defined( 'ICL_SITEPRESS_VERSION' ) || has_filter( 'wpml_current_language' ) ) {
+			$default_language = apply_filters( 'wpml_default_language', null );
+			$current_language = apply_filters( 'wpml_current_language', null );
+
+			return $current_language && $current_language !== $default_language ? $current_language : '';
+		}
+
+		if ( class_exists( 'Polylang' ) && function_exists( 'pll_default_language' ) && function_exists( 'pll_current_language' ) ) {
+			$default_language = pll_default_language( 'slug' );
+			$current_language = pll_current_language( 'slug' );
+
+			return $current_language && $current_language !== $default_language ? $current_language : '';
+		}
+
+		return '';
 	}
 
 	/**
@@ -259,6 +286,11 @@ class VI_WPRODUCTBUILDER_Data {
 			$this->data[ $post_id ] = get_post_meta( $post_id, 'woopb-param', true );
 			$params                 = $this->data[ $post_id ];
 		}
+		$language = $this->get_current_language();
+		if ( $language && isset( $params[ $field . '_' . $language ] ) && '' !== $params[ $field . '_' . $language ] ) {
+			return $params[ $field . '_' . $language ];
+		}
+
 		if ( isset( $params[ $field ] ) && $field ) {
 			return $params[ $field ];
 		} else {
@@ -1068,12 +1100,12 @@ class VI_WPRODUCTBUILDER_Data {
         .vi-wpb-wrapper .woocommerce-product-builder-wrapper .woopb-product .woopb-product-right .cart button:hover,
         .woopb-button.woopb-button-primary,
         .woopb-button:hover,
-        .woocommerce-product-builder-widget.widget_price_filter .ui-slider .ui-slider-range, 
+        .woocommerce-product-builder-widget.widget_price_filter .ui-slider .ui-slider-range,
         .woocommerce-product-builder-widget.widget_price_filter .ui-slider .ui-slider-handle,
         .vi-wpb-wrapper .entry-content .woopb-steps .woopb-step-heading.woopb-step-heading-active,
         .vi-wpb-wrapper .entry-content .woopb-steps .woopb-step-heading.woopb-step-heading-active a,
         #woopb-modal .woopb-active-page,
-        #woopb-modal .woopb-add-to-list-btn{	
+        #woopb-modal .woopb-add-to-list-btn{
             color:{$button_main_text_color};
             background-color:{$button_main_bg_color};
             border: 1px solid {$button_main_bg_color};
@@ -1106,8 +1138,8 @@ class VI_WPRODUCTBUILDER_Data {
         .woopb-button-preview-page.woopb-icon-svg:hover::before{
             background-color:{$preview_page_button_hover_text_color};
         }
-        .vi-wpb-wrapper .woocommerce-product-builder-wrapper .woopb-product .woopb-product-right .cart button:before, 
-        .woocommerce-product-builder-widget .woocommerce-widget-layered-nav-list li > a.woopb-add-to-list-btn, 
+        .vi-wpb-wrapper .woocommerce-product-builder-wrapper .woopb-product .woopb-product-right .cart button:before,
+        .woocommerce-product-builder-widget .woocommerce-widget-layered-nav-list li > a.woopb-add-to-list-btn,
         .woocommerce-product-builder-widget .woocommerce-widget-layered-nav-list li.chosen > a.woopb-add-to-list-btn{
             color:{$button_text_color};
             background-color:{$button_bg_color};
@@ -1172,6 +1204,9 @@ class VI_WPRODUCTBUILDER_Data {
 			}
 
 			$config              = get_post_meta( $post_id, 'woopb-param', true );
+			foreach ( [ 'tab_title', 'step_desc', 'step_error_desc', 'text_prefix', 'description' ] as $field ) {
+				$config[ $field ] = $this->get_data( $post_id, $field, $config[ $field ] ?? '' );
+			}
 			$enable_multi_select = $this->get_data( $post_id, 'enable_multi_select' );
 			$qty_field           = $this->get_data( $post_id, 'enable_quantity' );
 

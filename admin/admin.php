@@ -359,6 +359,7 @@ class VI_WPRODUCTBUILDER_Admin_Admin {
 			$arg_scripts = array(
 				'tab_title'                => esc_html__( 'Please fill your step title', 'woocommerce-product-builder' ),
 				'tab_title_change'         => esc_html__( 'Please fill your tab title that you want to change.', 'woocommerce-product-builder' ),
+				'tab_title_language'       => esc_html__( 'Please fill your step title for %language%', 'woocommerce-product-builder' ),
 				'tab_notice_remove'        => esc_html__( 'Do you want to remove this tab?', 'woocommerce-product-builder' ),
 				'compatible_notice_remove' => esc_html__( 'Do you want to remove all compatible?', 'woocommerce-product-builder' ),
 				'ajax_url'                 => esc_url( admin_url( 'admin-ajax.php' ) ),
@@ -367,6 +368,33 @@ class VI_WPRODUCTBUILDER_Admin_Admin {
 				"all_step_empty_message"   => esc_html__( 'You have not selected a category or product for any step. This product will not be saved. Do you want to continue?', 'woocommerce-product-builder' ),
 			);
 
+			$arg_scripts['languages'] = array();
+			if ( is_plugin_active( 'sitepress-multilingual-cms/sitepress.php' ) ) {
+				global $sitepress;
+				$default_lang = $sitepress->get_default_language();
+				$languages    = apply_filters( 'wpml_active_languages', null, null );
+				if ( count( $languages ) ) {
+					foreach ( $languages as $key => $language ) {
+						if ( $key != $default_lang ) {
+							$arg_scripts['languages'][] = array(
+								'slug'  => $key,
+								'label' => $language['translated_name'] ?? $key,
+							);
+						}
+					}
+				}
+			} elseif ( class_exists( 'Polylang' ) && function_exists( 'pll_languages_list' ) ) {
+				$languages    = pll_languages_list();
+				$default_lang = function_exists( 'pll_default_language' ) ? pll_default_language( 'slug' ) : '';
+				foreach ( $languages as $language ) {
+					if ( $language != $default_lang ) {
+						$arg_scripts['languages'][] = array(
+							'slug'  => $language,
+							'label' => $language,
+						);
+					}
+				}
+			}
 			wp_localize_script( 'woocommerce-product-builder-admin-product', '_woopb_params', $arg_scripts );
 		}
 	}
@@ -515,6 +543,19 @@ class VI_WPRODUCTBUILDER_Admin_Admin {
 									?>
                                     <input type="hidden" class="woopb-save-name" name="woopb-param[tab_title][<?php echo esc_attr( $k ) ?>]"
                                            value="<?php echo esc_attr( $tab_title ) ?>">
+									<?php
+									if ( $this->languages_count ) {
+										foreach ( $this->languages as $value ) {
+											$tab_titles_language = self::get_field( 'tab_title_' . $value, array() );
+											$tab_title_language  = $tab_titles_language[ $k ] ?? '';
+											?>
+                                            <input type="hidden" class="woopb-save-name" data-language="<?php echo esc_attr( $value ) ?>"
+                                                   name="woopb-param[tab_title_<?php echo esc_attr( $value ) ?>][<?php echo esc_attr( $k ) ?>]"
+                                                   value="<?php echo esc_attr( $tab_title_language ) ?>">
+											<?php
+										}
+									}
+									?>
                                 </a>
 							<?php }
 						} else { ?>
@@ -525,6 +566,16 @@ class VI_WPRODUCTBUILDER_Admin_Admin {
                                 </div>
                                 <span class="woopb-tab-title"><?php esc_html_e( 'First step', 'woocommerce-product-builder' ) ?></span>
                                 <input type="hidden" class="woopb-save-name" name="woopb-param[tab_title][first]" value="first">
+								<?php
+								if ( $this->languages_count ) {
+									foreach ( $this->languages as $value ) {
+										?>
+                                        <input type="hidden" class="woopb-save-name" data-language="<?php echo esc_attr( $value ) ?>"
+                                               name="woopb-param[tab_title_<?php echo esc_attr( $value ) ?>][first]" value="">
+										<?php
+									}
+								}
+								?>
                             </a>
 						<?php } ?>
                     </div>
@@ -1263,6 +1314,7 @@ class VI_WPRODUCTBUILDER_Admin_Admin {
 		];
 		if ( $this->languages_count ) {
 			foreach ( $this->languages as $value ) {
+				$temp[ 'tab_title_' . $value ] = [];
 				$temp[ 'step_desc_' . $value ] = [];
 			}
 		}
@@ -1277,6 +1329,7 @@ class VI_WPRODUCTBUILDER_Admin_Admin {
 					/*For multiple language*/
 					if ( $this->languages_count ) {
 						foreach ( $this->languages as $value ) {
+							$temp[ 'tab_title_' . $value ][ $key ] = $data[ 'tab_title_' . $value ][ $key ] ?? '';
 							$temp[ 'step_desc_' . $value ][ $key ] = $data[ 'step_desc_' . $value ][ $key ] ?? [];
 						}
 					}
@@ -1292,6 +1345,7 @@ class VI_WPRODUCTBUILDER_Admin_Admin {
 			$data['step_desc']    = array_values( $temp['step_desc'] );
 			if ( $this->languages_count ) {
 				foreach ( $this->languages as $value ) {
+					$data[ 'tab_title_' . $value ] = array_values( $temp[ 'tab_title_' . $value ] );
 					$data[ 'step_desc_' . $value ] = array_values( $temp[ 'step_desc_' . $value ] );
 
 				}
