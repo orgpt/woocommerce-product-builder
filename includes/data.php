@@ -1204,7 +1204,7 @@ class VI_WPRODUCTBUILDER_Data {
 			}
 
 			$config              = get_post_meta( $post_id, 'woopb-param', true );
-			foreach ( [ 'tab_title', 'step_desc', 'step_error_desc', 'text_prefix', 'description' ] as $field ) {
+			foreach ( [ 'step_desc', 'step_error_desc', 'text_prefix', 'description' ] as $field ) {
 				$config[ $field ] = $this->get_data( $post_id, $field, $config[ $field ] ?? '' );
 			}
 			$enable_multi_select = $this->get_data( $post_id, 'enable_multi_select' );

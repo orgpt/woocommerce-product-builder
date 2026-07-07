@@ -161,28 +161,13 @@ var woo_product_buider = {
             if (title == null || title == '') {
                 return;
             }
-            var translatedTitles = {};
-            if (Array.isArray(_woopb_params.languages)) {
-                _woopb_params.languages.forEach(function (language) {
-                    var translatedTitle = prompt(_woopb_params.tab_title_language.replace('%language%', language.label || language.slug));
-                    translatedTitles[language.slug] = translatedTitle || '';
-                });
-            }
             /*Menu*/
             var tab_data = jQuery('.woopb-tabs .menu a:first-child').clone();
             tab_data.find('.woopb-tab-title').text(title);
-            tab_data.addClass('active').attr('data-tab', tab_id);
+            tab_data.addClass('active').attr('data-tab', tab_id).find('input').val(title);
             jQuery('.woopb-tabs .menu').find('a').removeClass('active');
             jQuery('.woopb-tabs .menu').append(tab_data);
-            tab_data.find('.woopb-save-name').each(function () {
-                var field = jQuery(this);
-                var language = field.data('language');
-                if (language) {
-                    field.attr('name', `woopb-param[tab_title_${language}][${tab_id}]`).val(translatedTitles[language] || '');
-                } else {
-                    field.attr('name', `woopb-param[tab_title][${tab_id}]`).val(title);
-                }
-            });
+            tab_data.find('.woopb-save-name').attr('name', `woopb-param[tab_title][${tab_id}]`);
 
             /*Tab content*/
             var tab_content = jQuery('.woopb-tabs-content .tab').first().clone();
@@ -212,22 +197,7 @@ var woo_product_buider = {
                 return;
             }
             current_tab_item.find('.woopb-tab-title').text(title);
-            current_tab_item.find('.woopb-save-name').not('[data-language]').val(title);
-            current_tab_item.find('.woopb-save-name[data-language]').each(function () {
-                var field = jQuery(this);
-                var language = field.data('language');
-                var languageConfig = null;
-                jQuery.each(_woopb_params.languages || [], function (index, item) {
-                    if (item.slug === language) {
-                        languageConfig = item;
-                        return false;
-                    }
-                });
-                var translatedTitle = prompt(_woopb_params.tab_title_language.replace('%language%', (languageConfig && languageConfig.label) || language), field.val());
-                if (translatedTitle !== null) {
-                    field.val(translatedTitle);
-                }
-            });
+            current_tab_item.find('input').val(title);
         });
 
         /*Remove tab*/
