@@ -251,6 +251,27 @@ class VI_WPRODUCTBUILDER_Data {
 		return $object_id;
 	}
 
+	protected function get_default_language_term_id( $term_id, $taxonomy ) {
+		$term_id          = absint( $term_id );
+		$default_language = $this->get_default_language();
+
+		if ( ! $term_id || ! $taxonomy || ! $default_language ) {
+			return $term_id;
+		}
+
+		if ( defined( 'ICL_SITEPRESS_VERSION' ) || has_filter( 'wpml_object_id' ) ) {
+			return absint( apply_filters( 'wpml_object_id', $term_id, $taxonomy, true, $default_language ) );
+		}
+
+		if ( function_exists( 'pll_get_term' ) ) {
+			$translated_id = pll_get_term( $term_id, $default_language );
+
+			return $translated_id ? absint( $translated_id ) : $term_id;
+		}
+
+		return $term_id;
+	}
+
 	/**
 	 * Check products added in all steps
 	 *
@@ -776,8 +797,11 @@ class VI_WPRODUCTBUILDER_Data {
 							$attrs = $product->get_attributes();
 							if ( is_array( $attrs ) && ! empty( $attrs ) ) {
 								foreach ( $attrs as $key => $attr ) {
-									$options = $attr->get_options();
 									if ( is_object( $attr ) && ( $attr->get_id() ) ) {
+										$taxonomy = $attr->get_name();
+										$options  = array_map( function ( $option ) use ( $taxonomy ) {
+											return $this->get_default_language_term_id( $option, $taxonomy );
+										}, $attr->get_options() );
 										$list_attrs[ $key ] = isset( $list_attrs[ $key ] ) ? array_unique( array_merge( $list_attrs[ $key ], $options ) ) : $options;
 									}
 								}

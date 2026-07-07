@@ -161,6 +161,7 @@ class VI_WPRODUCTBUILDER_Admin_Attribute_Depend {
 
 				foreach ( $terms as $term ) {
 					$term_ids[] = $term->term_id;
+					$term_ids[] = $this->get_default_language_term_id( $term->term_id, $slug );
 				}
 			}
 
@@ -168,6 +169,28 @@ class VI_WPRODUCTBUILDER_Admin_Attribute_Depend {
 		}
 
 		return $list_attrs;
+	}
+
+	private function get_default_language_term_id( $term_id, $taxonomy ) {
+		$term_id = absint( $term_id );
+		if ( ! $term_id || ! $taxonomy ) {
+			return $term_id;
+		}
+
+		if ( defined( 'ICL_SITEPRESS_VERSION' ) || has_filter( 'wpml_default_language' ) ) {
+			$default_language = apply_filters( 'wpml_default_language', null );
+
+			return $default_language ? absint( apply_filters( 'wpml_object_id', $term_id, $taxonomy, true, $default_language ) ) : $term_id;
+		}
+
+		if ( function_exists( 'pll_default_language' ) && function_exists( 'pll_get_term' ) ) {
+			$default_language = pll_default_language( 'slug' );
+			$translated_id    = $default_language ? pll_get_term( $term_id, $default_language ) : 0;
+
+			return $translated_id ? absint( $translated_id ) : $term_id;
+		}
+
+		return $term_id;
 	}
 
 
@@ -190,7 +213,10 @@ class VI_WPRODUCTBUILDER_Admin_Attribute_Depend {
 					foreach ( $attributes as $attr ) {
 						$attr_id = $attr->get_id();
 						if ( in_array( $attr_id, $current_compatible_steps ) ) {
-							$options   = $attr->get_options();
+							$taxonomy  = $attr->get_name();
+							$options   = array_map( function ( $option ) use ( $taxonomy ) {
+								return $this->get_default_language_term_id( $option, $taxonomy );
+							}, $attr->get_options() );
 							$intersect = array_intersect( $list_attrs, $options );
 							if ( ! empty( $intersect ) ) {
 								$check[] = 1;
