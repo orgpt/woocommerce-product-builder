@@ -967,6 +967,14 @@ class VI_WPRODUCTBUILDER_Data {
 				$this->product_filters_cache[ $cache_key ] = $the_product;
 				return $the_product;
 			}
+
+			wp_reset_postdata();
+			$product_args['suppress_filters'] = true;
+			$the_product                      = new WP_Query( $product_args );
+			if ( $the_product->have_posts() ) {
+				$this->product_filters_cache[ $cache_key ] = $the_product;
+				return $the_product;
+			}
 			wp_reset_postdata();
 		}
 
