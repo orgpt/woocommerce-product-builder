@@ -218,6 +218,39 @@ class VI_WPRODUCTBUILDER_Data {
 		return '';
 	}
 
+	protected function get_default_language() {
+		if ( defined( 'ICL_SITEPRESS_VERSION' ) || has_filter( 'wpml_default_language' ) ) {
+			return apply_filters( 'wpml_default_language', null );
+		}
+
+		if ( class_exists( 'Polylang' ) && function_exists( 'pll_default_language' ) ) {
+			return pll_default_language( 'slug' );
+		}
+
+		return '';
+	}
+
+	protected function get_default_language_object_id( $object_id, $object_type ) {
+		$object_id        = absint( $object_id );
+		$default_language = $this->get_default_language();
+
+		if ( ! $object_id || ! $default_language ) {
+			return $object_id;
+		}
+
+		if ( defined( 'ICL_SITEPRESS_VERSION' ) || has_filter( 'wpml_object_id' ) ) {
+			return absint( apply_filters( 'wpml_object_id', $object_id, $object_type, true, $default_language ) );
+		}
+
+		if ( function_exists( 'pll_get_post' ) ) {
+			$translated_id = pll_get_post( $object_id, $default_language );
+
+			return $translated_id ? absint( $translated_id ) : $object_id;
+		}
+
+		return $object_id;
+	}
+
 	/**
 	 * Check products added in all steps
 	 *
@@ -727,9 +760,18 @@ class VI_WPRODUCTBUILDER_Data {
 					}
 					if ( is_array( $compatible_products ) && ! empty( $compatible_products ) ) {
 						foreach ( $compatible_products as $compatible_product ) {
-							$product = wc_get_product( $compatible_product['product_id'] ?? $compatible_product['woopb-add-to-cart'] ?? 0 );
+							$selected_product_id = $compatible_product['variation_id'] ?? $compatible_product['product_id'] ?? $compatible_product['woopb-add-to-cart'] ?? 0;
+							$object_type         = ! empty( $compatible_product['variation_id'] ) ? 'product_variation' : 'product';
+							$selected_product_id = $this->get_default_language_object_id( $selected_product_id, $object_type );
+							$product             = wc_get_product( $selected_product_id );
 							if ( ! $product ) {
 								continue;
+							}
+							if ( $product->get_type() === 'variation' ) {
+								$product = wc_get_product( $product->get_parent_id() );
+								if ( ! $product ) {
+									continue;
+								}
 							}
 							$attrs = $product->get_attributes();
 							if ( is_array( $attrs ) && ! empty( $attrs ) ) {
