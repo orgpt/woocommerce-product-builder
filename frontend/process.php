@@ -269,19 +269,7 @@ class VI_WPRODUCTBUILDER_FrontEnd_Process {
 	 * @return bool
 	 */
 	private function get_data( $post_id, $field, $default = '' ) {
-
-		if ( isset( $this->data[ $post_id ] ) && $this->data[ $post_id ] ) {
-			$params = $this->data[ $post_id ];
-		} else {
-			$this->data[ $post_id ] = get_post_meta( $post_id, 'woopb-param', true );
-			$params                 = $this->data[ $post_id ];
-		}
-
-		if ( isset( $params[ $field ] ) && $field ) {
-			return $params[ $field ];
-		} else {
-			return $default;
-		}
+		return $this->settings->get_data( $post_id, $field, $default );
 	}
 
 	/**

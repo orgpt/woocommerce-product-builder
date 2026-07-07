@@ -1239,6 +1239,30 @@ class VI_WPRODUCTBUILDER_Admin_Admin {
                     <div class="vi-ui input ">
                         <input type="text" name="<?php echo esc_attr( self::set_field( 'product_builder_fee_label' ) ); ?>" value="<?php echo esc_attr( self::get_field( 'product_builder_fee_label' ) ); ?>">
                     </div>
+					<?php
+					if ( $this->languages_count ) {
+						foreach ( $this->languages as $value ) {
+							?>
+                            <p>
+                                <label for="<?php echo esc_attr( self::set_field( 'product_builder_fee_label_' . $value ) ); ?>"><?php
+							if ( isset( $this->languages_data[ $value ]['country_flag_url'] ) && $this->languages_data[ $value ]['country_flag_url'] ) {
+								?>
+                                    <img src="<?php echo esc_url( $this->languages_data[ $value ]['country_flag_url'] ); ?>">
+								<?php
+							}
+							echo esc_html( $value );
+							if ( isset( $this->languages_data[ $value ]['translated_name'] ) ) {
+								echo '(' . esc_html( $this->languages_data[ $value ]['translated_name'] ) . ')';
+							}
+							?>:</label>
+                            </p>
+                            <div class="vi-ui input ">
+                                <input type="text" name="<?php echo esc_attr( self::set_field( 'product_builder_fee_label_' . $value ) ); ?>" value="<?php echo esc_attr( self::get_field( 'product_builder_fee_label_' . $value ) ); ?>">
+                            </div>
+							<?php
+						}
+					}
+					?>
                     <p><?php esc_html_e( 'Label of the product builder extra fee on Product Builder page.', 'woocommerce-product-builder' ) ?></p>
                 </td>
             </tr>
@@ -1248,6 +1272,30 @@ class VI_WPRODUCTBUILDER_Admin_Admin {
                     <div class="vi-ui input ">
                         <input type="text" name="<?php echo esc_attr( self::set_field( 'product_builder_fee_cart_label' ) ); ?>" value="<?php echo esc_attr( self::get_field( 'product_builder_fee_cart_label' ) ); ?>">
                     </div>
+					<?php
+					if ( $this->languages_count ) {
+						foreach ( $this->languages as $value ) {
+							?>
+                            <p>
+                                <label for="<?php echo esc_attr( self::set_field( 'product_builder_fee_cart_label_' . $value ) ); ?>"><?php
+							if ( isset( $this->languages_data[ $value ]['country_flag_url'] ) && $this->languages_data[ $value ]['country_flag_url'] ) {
+								?>
+                                    <img src="<?php echo esc_url( $this->languages_data[ $value ]['country_flag_url'] ); ?>">
+								<?php
+							}
+							echo esc_html( $value );
+							if ( isset( $this->languages_data[ $value ]['translated_name'] ) ) {
+								echo '(' . esc_html( $this->languages_data[ $value ]['translated_name'] ) . ')';
+							}
+							?>:</label>
+                            </p>
+                            <div class="vi-ui input ">
+                                <input type="text" name="<?php echo esc_attr( self::set_field( 'product_builder_fee_cart_label_' . $value ) ); ?>" value="<?php echo esc_attr( self::get_field( 'product_builder_fee_cart_label_' . $value ) ); ?>">
+                            </div>
+							<?php
+						}
+					}
+					?>
                     <p><?php esc_html_e( 'Label of the extra fee in cart details.', 'woocommerce-product-builder' ) ?></p>
                 </td>
             </tr>
